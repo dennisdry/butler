@@ -22,7 +22,7 @@
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
-.idea
+
 
 # CMake
 cmake-build-debug/
@@ -166,3 +166,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/java,maven,macos,linux,windows,intellij
+
+#BUTLER modification
+.idea
