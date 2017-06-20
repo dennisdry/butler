@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="butler" />
+        <module name="buttler" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="butler" target="1.5" />
+      <module name="buttler" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
