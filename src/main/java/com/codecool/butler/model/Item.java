@@ -15,6 +15,7 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String name;
     private int stock;
 
@@ -55,5 +56,9 @@ public class Item {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public long getId() {
+        return id;
     }
 }
