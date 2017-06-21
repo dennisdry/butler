@@ -172,4 +172,4 @@ $RECYCLE.BIN/
 /src/main/resources/META-INF/drop-schema.ddl
 /.idea/
 /butler.iml
-
+.idea
