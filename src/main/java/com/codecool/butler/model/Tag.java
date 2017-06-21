@@ -15,6 +15,9 @@ public class Tag {
 
     private String name;
 
+    @OneToOne
+    private TagType tagType;
+
     public Tag(){}
 
     public Tag(String name) {this.name = name;}

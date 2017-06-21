@@ -8,6 +8,7 @@ import java.util.List;
  */
 @Entity(name = "butleruser")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -23,6 +24,9 @@ public class User {
     @ElementCollection
     @CollectionTable
     private List<String> email;
+
+    @OneToMany
+    private List<Item> items;
 
 
     public User(){}

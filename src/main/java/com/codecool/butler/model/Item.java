@@ -1,23 +1,28 @@
 package com.codecool.butler.model;
 
+import org.eclipse.persistence.annotations.CompositeMember;
+
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by petya on 2017.06.21..
  */
-@Entity(name = "butler_message")
-public class Message {
+
+@Entity
+public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private String name;
+    private int stock;
 
-    @OneToOne
-    private MessageType messageType;
+    @OneToMany
+    private List<Tag> tags;
 
-    public Message(){}
+    @ManyToOne
+    private User user;
 
-    public Message(String name) {this.name = name;}
+
 }
