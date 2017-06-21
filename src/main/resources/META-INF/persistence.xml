@@ -16,9 +16,9 @@
             <property name="javax.persistence.schema-generation.scripts.drop-target" value="src/main/resources/META-INF/drop-schema.ddl"/>
 
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/butlerDB"/>
-            <property name="javax.persistence.jdbc.user" value="petya"/>
-            <property name="javax.persistence.jdbc.password" value="petya"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/butlerdb"/>
+            <property name="javax.persistence.jdbc.user" value="dry"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
             <!--<property name="javax.persistence.sql-load-script-source" value="insert.sql"/>-->
         </properties>
     </persistence-unit>

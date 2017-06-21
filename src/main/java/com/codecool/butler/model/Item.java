@@ -1,7 +1,5 @@
 package com.codecool.butler.model;
 
-import org.eclipse.persistence.annotations.CompositeMember;
-
 import javax.persistence.*;
 import java.util.List;
 
