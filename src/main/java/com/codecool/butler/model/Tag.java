@@ -21,4 +21,20 @@ public class Tag {
     public Tag(){}
 
     public Tag(String name) {this.name = name;}
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public TagType getTagType() {
+        return tagType;
+    }
+
+    public void setTagType(TagType tagType) {
+        this.tagType = tagType;
+    }
 }
