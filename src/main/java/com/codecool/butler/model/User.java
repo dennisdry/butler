@@ -1,5 +1,6 @@
 package com.codecool.butler.model;
 
+import javax.inject.Inject;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +27,10 @@ public class User {
     @CollectionTable
     private List<String> email;
 
-    @OneToMany
-    private List<Item> items;
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Item> items = new ArrayList<>();
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Message> messages = new ArrayList<>();
 
     public User(){}
@@ -72,17 +73,21 @@ public class User {
         return phone;
     }
 
-    public void setPhone(List<String> phone) {
-        this.phone = phone;
+    public void setPhone(List<String> phones) {
+        this.phone = phones;
     }
+
+    public void addPhone(String phone){this.phone.add(phone);}
 
     public List<String> getEmail() {
         return email;
     }
 
-    public void setEmail(List<String> email) {
-        this.email = email;
+    public void setEmail(List<String> emails) {
+        this.email = emails;
     }
+
+    public void addEmail(String email){ this.email.add(email);}
 
     public List<Item> getItems() {
         return items;
@@ -92,11 +97,13 @@ public class User {
         this.items = items;
     }
 
+    public void addItem(Item item){this.items.add(item);}
+
     public List<Message> getMessages() {
         return messages;
     }
 
-    public void setMessage(Message message) {
-        this.messages.add(message);
-    }
+    public void setMessages(ArrayList<Message> messages) {this.messages = messages;}
+
+    public void addMessage(Message message) {this.messages.add(message);}
 }

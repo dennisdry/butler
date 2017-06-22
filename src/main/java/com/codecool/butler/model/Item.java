@@ -1,6 +1,7 @@
 package com.codecool.butler.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,11 +16,15 @@ public class Item {
     private long id;
     private String name;
 
-    @OneToMany
-    private List<Tag> tags;
+    @ManyToMany
+    private List<Tag> tags = new ArrayList<>();
 
-    @ManyToOne
-    private User user;
+    public Item() {
+    }
+
+    public Item(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -37,11 +42,8 @@ public class Item {
         this.tags = tags;
     }
 
-    public User getUser() {
-        return user;
+    public void addTag(Tag tag) {
+        tags.add(tag);
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
 }

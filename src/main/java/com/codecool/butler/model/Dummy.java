@@ -23,7 +23,6 @@ public class Dummy {
         EntityManager em = emf.createEntityManager();
 
         EntityTransaction transaction = em.getTransaction();
-        transaction.begin();
 
 
         List<String> phone1 = new ArrayList<>();
@@ -37,9 +36,9 @@ public class Dummy {
         phone2.add("13423232322");
 
         List<String> phone3 = new ArrayList<>();
-        phone1.add("11232323232");
-        phone1.add("12332323232");
-        phone1.add("13423232322");
+        phone3.add("11232323232");
+        phone3.add("12332323232");
+        phone3.add("13423232322");
 
         List<String> email1 = new ArrayList<>();
         email1.add("dummy11@gmail.com");
@@ -104,23 +103,52 @@ public class Dummy {
         messageList1.add(message2);
         messageList1.add(message3);
 
+        Item laptop = new Item("laptop");
+        Item desk = new Item("desk");
+        Item pen = new Item("pen");
+
+        Stock stock1 = new Stock(laptop,8);
+        Stock stock2 = new Stock(desk,7);
+        Stock stock3 = new Stock(pen,15);
+
+        laptop.addTag(tag1);
+        laptop.addTag(tag2);
+        desk.addTag(tag2);
+        desk.addTag(tag3);
+        pen.addTag(tag3);
+        pen.addTag(tag4);
+
+        List<Item> inventory = new ArrayList<>();
+        inventory.add(laptop);
+        inventory.add(desk);
+        inventory.add(pen);
+
         User user1 = new User("Peter", "Magpie", "petya", phone1,email1);
         User user2 = new User("Dénes", "Dry", "dry", phone2,email2);
         User user3 = new User("Thomas", "Varga", "anarch", phone3,email3);
         User user4 = new User("Eszter", "Lukacs", "pengefutar", phone1,email2);
 
-        user1.setMessage(message1);
-        user1.setMessage(message2);
-        user2.setMessage(message3);
-        user2.setMessage(message4);
-        user3.setMessage(message5);
-        user4.setMessage(message6);
-        user4.setMessage(message7);
+        user1.addMessage(message1);
+        user1.addMessage(message2);
+        user2.addMessage(message3);
+        user2.addMessage(message4);
+        user3.addMessage(message5);
+        user3.addMessage(message6);
+        user4.addMessage(message7);
 
-        em.persist(user1);
-        em.persist(user2);
-        em.persist(user3);
-        em.persist(user4);
+        user1.addItem(laptop);
+        user1.addItem(desk);
+        user1.addItem(pen);
+
+        user2.setItems(inventory);
+
+        transaction.begin();
+
+        em.persist(messageType1);
+        em.persist(messageType2);
+        em.persist(messageType3);
+        em.persist(messageType4);
+        em.persist(messageType5);
         em.persist(tagType1);
         em.persist(tagType2);
         em.persist(tagType3);
@@ -130,18 +158,14 @@ public class Dummy {
         em.persist(tag2);
         em.persist(tag3);
         em.persist(tag4);
-        em.persist(messageType1);
-        em.persist(messageType2);
-        em.persist(messageType3);
-        em.persist(messageType4);
-        em.persist(messageType5);
-        em.persist(message1);
-        em.persist(message2);
-        em.persist(message3);
-        em.persist(message4);
-        em.persist(message5);
-        em.persist(message6);
-        em.persist(message7);
+        em.persist(user1);
+        em.persist(user2);
+        em.persist(user3);
+        em.persist(user4);
+        em.persist(stock1);
+        em.persist(stock2);
+        em.persist(stock3);
+
         transaction.commit();
     }
 }
