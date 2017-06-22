@@ -56,7 +56,6 @@ fabric.properties
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-# *.iml
 # modules.xml
 # .idea/misc.xml
 # *.ipr
@@ -169,5 +168,4 @@ $RECYCLE.BIN/
 /src/main/resources/META-INF/create-schema.ddl
 /src/main/resources/META-INF/drop-schema.ddl
 /.idea/
-/butler.iml
 .idea
