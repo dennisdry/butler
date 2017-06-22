@@ -1,6 +1,7 @@
 package com.codecool.butler.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,6 +29,8 @@ public class User {
     @OneToMany
     private List<Item> items;
 
+    @OneToMany
+    private List<Message> messages = new ArrayList<>();
 
     public User(){}
 
@@ -87,5 +90,13 @@ public class User {
 
     public void setItems(List<Item> items) {
         this.items = items;
+    }
+
+    public List<Message> getMessages() {
+        return messages;
+    }
+
+    public void setMessage(Message message) {
+        this.messages.add(message);
     }
 }

@@ -14,7 +14,6 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    private int stock;
 
     @OneToMany
     private List<Tag> tags;
@@ -22,21 +21,12 @@ public class Item {
     @ManyToOne
     private User user;
 
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
     }
 
     public List<Tag> getTags() {

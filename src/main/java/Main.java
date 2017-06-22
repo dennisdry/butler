@@ -9,5 +9,4 @@ public class Main {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("butlerPU");
         EntityManager em = emf.createEntityManager();
     }
-
 }

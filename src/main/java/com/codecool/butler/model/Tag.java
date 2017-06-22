@@ -20,7 +20,10 @@ public class Tag {
 
     public Tag(){}
 
-    public Tag(String name) {this.name = name;}
+    public Tag(String name, TagType tagType) {
+        this.name = name;
+        this.tagType = tagType;
+    }
 
     public String getName() {
         return name;

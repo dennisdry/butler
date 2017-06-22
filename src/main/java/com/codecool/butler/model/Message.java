@@ -12,21 +12,24 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String name;
+    private String message;
 
-    @OneToOne
+    @ManyToOne
     private MessageType messageType;
 
     public Message(){}
 
-    public Message(String name) {this.name = name;}
+    public Message(String name, MessageType messageType) {
+        this.message = name;
+        this.messageType = messageType;
+    }
 
     public String getName() {
-        return name;
+        return message;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.message = name;
     }
 
     public MessageType getMessageType() {
