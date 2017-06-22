@@ -37,4 +37,8 @@ public class Tag {
     public void setTagType(TagType tagType) {
         this.tagType = tagType;
     }
+
+    public long getId() {
+        return id;
+    }
 }

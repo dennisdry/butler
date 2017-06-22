@@ -28,6 +28,8 @@ public class User {
     @OneToMany
     private List<Item> items;
 
+    @OneToMany
+    private List<Tag> tags;
 
     public User(){}
 
@@ -87,5 +89,9 @@ public class User {
 
     public void setItems(List<Item> items) {
         this.items = items;
+    }
+
+    public long getId() {
+        return id;
     }
 }

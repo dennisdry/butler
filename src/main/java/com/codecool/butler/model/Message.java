@@ -1,6 +1,7 @@
 package com.codecool.butler.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by petya on 2017.06.21..
@@ -16,6 +17,9 @@ public class Message {
 
     @OneToOne
     private MessageType messageType;
+
+    @OneToMany
+    private List<Tag> tags;
 
     public Message(){}
 
@@ -35,5 +39,9 @@ public class Message {
 
     public void setMessageType(MessageType messageType) {
         this.messageType = messageType;
+    }
+
+    public long getId() {
+        return id;
     }
 }
