@@ -1,0 +1,109 @@
+.main-chat-card {
+  margin: 30px 0;
+  .card {
+    background: $chat-card-bg;
+    color: $secondary-font;
+    .date {
+      font-size: 10px;
+      opacity:.8;
+      text-align: right;
+      padding: 5px 15px 0 0;
+    }
+    .message-body {
+      font-size: 16px;
+      margin: 5px 0 0 0;
+      padding: 5px 15px 15px 15px;
+    }
+    .action-bar {
+      background: $chat-card-actionbar;
+      height: 50px;
+      padding: 0 15px;
+      .row {
+        height: 50px;
+        .tag {
+          opacity: .4;
+          font-size: 14px;
+          margin: 0 10px;
+          a {
+            color: black;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+        .right-actions {
+          span {
+            &.comments-number {
+              margin: 0 25px;
+              color: black;
+              cursor: pointer;
+              font-size: 14px;
+              cursor: pointer;
+            }
+            &.reply-action {
+              .icon {
+                width: 15px;
+                height: 15px;
+                background: url("../img/reply-all-button.svg") no-repeat;
+                background-size: 15px 15px;
+                display: inline-block;
+                margin: 0 0 -3px 0;
+              }
+              .text {
+                display: inline-block;
+                color: black;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .profile {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    img {
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+    }
+  }
+}
+
+.reply-chat-card {
+  margin-bottom: 15px;
+  .card {
+    background: white;
+    border: 1px solid $primary;
+    color: $secondary-font;
+    .date {
+      font-size: 10px;
+      opacity:.8;
+      text-align: right;
+      padding: 5px 15px 0 0;
+    }
+    .message-body {
+      font-size: 16px;
+      margin: 5px 0 0 0;
+      padding: 5px 15px 15px 15px;
+    }
+  }
+  .profile {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    img {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+.replies {
+  display: none;
+}

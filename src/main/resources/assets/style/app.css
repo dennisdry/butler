@@ -6658,7 +6658,112 @@ h4 {
   font-family: 'Libre Baskerville', serif; }
 
 main {
-  min-height: calc(100vh - 285px); }
+  min-height: calc(100vh - 285px);
+  padding: 30px 0; }
+
+button.main-button {
+  border: 1px solid #0C7666;
+  padding: 20px 50px;
+  color: #0C7666;
+  font-size: 18px;
+  text-align: center;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  button.main-button:hover {
+    background: #0C7666;
+    color: white; }
+
+.btn-secondaction {
+  background: #0C7666;
+  border: none;
+  color: white; }
+  .btn-secondaction:hover {
+    background: #0C7666;
+    opacity: .8; }
+
+.main-chat-card {
+  margin: 30px 0; }
+  .main-chat-card .card {
+    background: #F1FBFA;
+    color: #696969; }
+    .main-chat-card .card .date {
+      font-size: 10px;
+      opacity: .8;
+      text-align: right;
+      padding: 5px 15px 0 0; }
+    .main-chat-card .card .message-body {
+      font-size: 16px;
+      margin: 5px 0 0 0;
+      padding: 5px 15px 15px 15px; }
+    .main-chat-card .card .action-bar {
+      background: #E6F2EE;
+      height: 50px;
+      padding: 0 15px; }
+      .main-chat-card .card .action-bar .row {
+        height: 50px; }
+        .main-chat-card .card .action-bar .row .tag {
+          opacity: .4;
+          font-size: 14px;
+          margin: 0 10px; }
+          .main-chat-card .card .action-bar .row .tag a {
+            color: black; }
+            .main-chat-card .card .action-bar .row .tag a:hover {
+              color: black; }
+        .main-chat-card .card .action-bar .row .right-actions span.comments-number {
+          margin: 0 25px;
+          color: black;
+          cursor: pointer;
+          font-size: 14px;
+          cursor: pointer; }
+        .main-chat-card .card .action-bar .row .right-actions span.reply-action .icon {
+          width: 15px;
+          height: 15px;
+          background: url("../img/reply-all-button.svg") no-repeat;
+          background-size: 15px 15px;
+          display: inline-block;
+          margin: 0 0 -3px 0; }
+        .main-chat-card .card .action-bar .row .right-actions span.reply-action .text {
+          display: inline-block;
+          color: black;
+          font-size: 14px; }
+  .main-chat-card .profile {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    bottom: 0; }
+    .main-chat-card .profile img {
+      border-radius: 50%;
+      width: 65px;
+      height: 65px; }
+
+.reply-chat-card {
+  margin-bottom: 15px; }
+  .reply-chat-card .card {
+    background: white;
+    border: 1px solid #0C7666;
+    color: #696969; }
+    .reply-chat-card .card .date {
+      font-size: 10px;
+      opacity: .8;
+      text-align: right;
+      padding: 5px 15px 0 0; }
+    .reply-chat-card .card .message-body {
+      font-size: 16px;
+      margin: 5px 0 0 0;
+      padding: 5px 15px 15px 15px; }
+  .reply-chat-card .profile {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 0; }
+    .reply-chat-card .profile img {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px; }
+
+.replies {
+  display: none; }
 
 .header {
   height: 165px;
@@ -6724,6 +6829,8 @@ footer {
   background: #0C7666;
   color: white;
   text-align: center; }
+  footer p {
+    margin: 0; }
   footer .row {
     height: 120px; }
 

@@ -20,4 +20,30 @@ h4 {
 
 main {
   min-height: calc(100vh - 285px);
+  padding: 30px 0;
+}
+
+button.main-button {
+  border: 1px solid $primary;
+  padding: 20px 50px;
+  color: $primary;
+  font-size: 18px;
+  text-align: center;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background: $primary;
+    color: white;
+  }
+}
+
+.btn-secondaction {
+  background: $primary;
+  border: none;
+  color: white;
+  &:hover {
+    background: $primary;
+    opacity: .8;
+  }
 }
