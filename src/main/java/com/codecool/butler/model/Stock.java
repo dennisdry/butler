@@ -3,7 +3,9 @@ package com.codecool.butler.model;
 import javax.persistence.*;
 
 /**
- * Created by petya on 2017.06.22..
+ * Stock class instances store the quantity of every Item instances.
+ * It's more convenient to store quantity in a class independent from
+ * Item because we can have more storages for items in different quantities.
  */
 @Entity
 public class Stock {
@@ -12,10 +14,13 @@ public class Stock {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Item item;
 
     private int stock;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    private StockType stockType;
 
     public Stock(){}
 
@@ -36,7 +41,11 @@ public class Stock {
         return stock;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void setStock(int stock) { this.stock = stock; }
+
+    public StockType getStockType() { return stockType; }
+
+    public void setStockType(StockType stockType) {
+        this.stockType = stockType;
     }
 }
