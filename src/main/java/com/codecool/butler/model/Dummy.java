@@ -223,7 +223,7 @@ public class Dummy {
         em.persist(user4);
         transaction.commit();
 
-        logger.info("And after all, persists only the four user and fill 16 table. So incredible!!");
+        logger.info("And after all, persists only the four user and fill 15 table. So incredible!!");
 
     }
 }
