@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d289d1df-4cd9-462d-8505-0e6f6835a263" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/js/main.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/header.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/header.css.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/app.css" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/app.css.map" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/app.scss" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/cards.scss" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/partials/cards.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.scss" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/style/partials/variables.scss" afterPath="$PROJECT_DIR$/src/main/resources/assets/style/partials/variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/index.html" afterPath="$PROJECT_DIR$/src/main/resources/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,10 +29,10 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
-                  <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="41" />
                   <folding>
-                    <element signature="e#1504#1511#1" expanded="true" />
+                    <element signature="e#1588#1595#1" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -56,7 +46,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/cards.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="167">
-                  <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+                  <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -66,7 +56,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="187">
-                  <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+                  <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -75,8 +65,8 @@
           <file leaf-file-name="global.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+                <state relative-caret-position="602">
+                  <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -160,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.scss" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/style/partials/variables.scss" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/style/app.scss" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss" />
         <option value="$PROJECT_DIR$/src/main/resources/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss" />
       </list>
     </option>
   </component>
@@ -372,6 +362,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="butler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="butler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -481,12 +489,12 @@
       <option name="presentableId" value="Default" />
       <updated>1498048456502</updated>
       <workItem from="1498048459170" duration="6838000" />
-      <workItem from="1498108490973" duration="19983000" />
+      <workItem from="1498108490973" duration="21607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26821000" />
+    <option name="totallyTimeSpent" value="28445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,18 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/cards.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -770,21 +770,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/cards.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        <state relative-caret-position="167">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="41" />
           <folding>
-            <element signature="e#1504#1511#1" expanded="true" />
+            <element signature="e#1588#1595#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/style/partials/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
