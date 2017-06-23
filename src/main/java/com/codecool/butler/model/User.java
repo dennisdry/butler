@@ -1,12 +1,13 @@
 package com.codecool.butler.model;
 
-import javax.inject.Inject;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by petya on 2017.06.20..
+ * User instances collects every data for our users,
+ * like their contacts, inventory, messages, etc. we
+ * have to manage by its getter and setter methods.
  */
 @Entity(name = "butleruser")
 public class User {
@@ -28,10 +29,13 @@ public class User {
     private List<String> email;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    private List<Item> items = new ArrayList<>();
+    private List<Stock> inventory = new ArrayList<>();
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Message> messages = new ArrayList<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Tag> tags = new ArrayList<>();
 
     public User(){}
 
@@ -89,15 +93,15 @@ public class User {
 
     public void addEmail(String email){ this.email.add(email);}
 
-    public List<Item> getItems() {
-        return items;
+    public List<Stock> getInventory() {
+        return inventory;
     }
 
-    public void setItems(List<Item> items) {
-        this.items = items;
+    public void setInventory(List<Stock> items) {
+        this.inventory = items;
     }
 
-    public void addItem(Item item){this.items.add(item);}
+    public void addItemWithStockToInventory(Stock stock){this.inventory.add(stock);}
 
     public List<Message> getMessages() {
         return messages;
@@ -106,4 +110,15 @@ public class User {
     public void setMessages(ArrayList<Message> messages) {this.messages = messages;}
 
     public void addMessage(Message message) {this.messages.add(message);}
+
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public void addTag(Tag tag){ this.tags.add(tag);}
+
 }

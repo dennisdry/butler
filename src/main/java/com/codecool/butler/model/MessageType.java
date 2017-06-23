@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * Created by petya on 2017.06.21..
+ * MassageType instances are type(or category) attachments for Message instances.
  */
 @Entity
 public class MessageType {

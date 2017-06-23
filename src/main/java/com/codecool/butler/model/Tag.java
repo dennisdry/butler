@@ -2,9 +2,9 @@ package com.codecool.butler.model;
 
 import javax.persistence.*;
 
-
 /**
- * Created by petya on 2017.06.21..
+ * Tag class instances responsible for categorizing everything in
+ * the application.
  */
 @Entity
 public class Tag {
@@ -15,7 +15,7 @@ public class Tag {
 
     private String name;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private TagType tagType;
 
     public Tag(){}

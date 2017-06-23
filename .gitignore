@@ -56,6 +56,10 @@ fabric.properties
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
+<<<<<<< HEAD
+=======
+# *.iml
+>>>>>>> origin/petya/javadoc_logger
 # modules.xml
 # .idea/misc.xml
 # *.ipr
@@ -169,3 +173,4 @@ $RECYCLE.BIN/
 /src/main/resources/META-INF/drop-schema.ddl
 /.idea/
 .idea
+/butler.iml

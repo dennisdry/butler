@@ -5,12 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
 /**
- *  TagType instances are type(or category) attachments for Tag instances.
+ * StockType instances are type(or category) attachments for Stock instances.
  */
 @Entity
-public class TagType {
+public class StockType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,15 +17,11 @@ public class TagType {
 
     private String name;
 
-    public TagType(){}
+    public StockType(){}
 
-    public TagType(String name){this.name = name;}
+    public StockType(String name){this.name = name;}
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {this.name = name;}
 }

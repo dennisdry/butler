@@ -4,10 +4,10 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by petya on 2017.06.21..
- */
 
+/**
+ * In Item instances you can store every physical item by their name.
+ */
 @Entity
 public class Item {
 
@@ -16,7 +16,7 @@ public class Item {
     private long id;
     private String name;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Tag> tags = new ArrayList<>();
 
     public Item() {
