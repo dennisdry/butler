@@ -8,9 +8,6 @@ import javax.persistence.Persistence;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by petya on 2017.06.22..
- */
 public class Dummy {
 
     public static void main(String[] args) {

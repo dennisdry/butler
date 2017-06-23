@@ -5,10 +5,16 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by petya on 2017.06.20..
- */
 @Entity(name = "butleruser")
+@NamedQueries({
+        @NamedQuery(name="butleruser.getUserNames",
+                query="Select userName FROM butleruser"),
+        @NamedQuery(name="butleruser.getId",
+                query="Select id FROM butleruser"),
+        @NamedQuery(name="butleruser.getFirstName",
+                query="Select firstName FROM butleruser")
+})
+
 public class User {
 
     @Id

@@ -2,10 +2,6 @@ package com.codecool.butler.model;
 
 import javax.persistence.*;
 
-
-/**
- * Created by petya on 2017.06.21..
- */
 @Entity
 public class Tag {
 

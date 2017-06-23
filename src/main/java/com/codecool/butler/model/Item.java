@@ -4,11 +4,11 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by petya on 2017.06.21..
- */
-
 @Entity
+@NamedQueries({
+        @NamedQuery(name="Item.getId",
+                query="Select id FROM butleruser")
+})
 public class Item {
 
     @Id

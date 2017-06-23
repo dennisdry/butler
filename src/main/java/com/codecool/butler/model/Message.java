@@ -2,9 +2,6 @@ package com.codecool.butler.model;
 
 import javax.persistence.*;
 
-/**
- * Created by petya on 2017.06.21..
- */
 @Entity(name = "butler_message")
 public class Message {
 

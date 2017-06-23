@@ -2,9 +2,7 @@ package com.codecool.butler.model;
 
 import javax.persistence.*;
 
-/**
- * Created by petya on 2017.06.22..
- */
+
 @Entity
 public class Stock {
 
